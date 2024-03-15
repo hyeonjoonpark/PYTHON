@@ -7,7 +7,7 @@ F = 2
 B = 0
 T = np.arange(0, 3, 0.01)
 
-def drawSin(A, F, END_TIME, B, INTERVAL):
+def drawSin(F, A=1, END_TIME=5, B=0, INTERVAL=0.01):
     T = np.arange(0, END_TIME, INTERVAL)
     y = A * np.sin(2 * np.pi * F * T) + B
 
@@ -15,6 +15,4 @@ def drawSin(A, F, END_TIME, B, INTERVAL):
     plt.plot(T, y)
     plt.show()
 
-plt.figure()
-plt.plot(T, y)
-plt.show()
+drawSin(3)

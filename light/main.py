@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 print(cv2.IMREAD_GRAYSCALE)
-img1 = cv2.imread("./images/img5.jpg", 0)
+img1 = cv2.imread("../images/img5.jpg", 0)
 
 v = np.full(shape=img1.shape, fill_value=100, dtype=np.uint8)
 v_n = np.full(shape=v.shape, fill_value=1255, dtype=np.uint8)
